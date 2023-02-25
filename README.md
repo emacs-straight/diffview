@@ -1,3 +1,4 @@
+<a href="https://github.com/mgalgs/diffview-mode"><img src="https://www.gnu.org/software/emacs/images/emacs.png" alt="Emacs Logo" width="80" height="80" align="right"></a>
 ## diffview.el
 *View diffs in side-by-side format*
 
@@ -25,6 +26,13 @@ The following functions are provided for launching a side-by-side diff:
 * `diffview-message` : View the current email message (which presumably
    contains a patch) side-by-side
 
+### Keybindings
+
+
+* `}` : Next file
+* `{` : Previous file
+* `l` : Align windows
+* `q` : Quit
 
 ### Screenshots
 
@@ -35,8 +43,9 @@ Before:
 After:
 <img src="https://raw.github.com/mgalgs/diffview-mode/master/screenshots/diffview-after.png">
 
-### Function Documentation
 
+
+### Function and Macro Documentation
 
 #### `(diffview-current)`
 
@@ -49,7 +58,6 @@ Show current diff region in a side-by-side view.
 #### `(diffview-message)`
 
 Show `message-mode` buffer in a side-by-side view.
-
 This is useful for reading patches from mailing lists.
 
 -----
